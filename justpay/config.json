@@ -1,0 +1,7 @@
+{
+    "MERCHANT_ID": "36524",
+    "PRIVATE_KEY_PATH": "justpay/privateKey.pem",
+    "PUBLIC_KEY_PATH": "justpay/key_cad54446178c4fd29c1e5b4b84aec3f7.pem",
+    "KEY_UUID": "key_cad54446178c4fd29c1e5b4b84aec3f7",
+    "PAYMENT_PAGE_CLIENT_ID": "44156"
+}

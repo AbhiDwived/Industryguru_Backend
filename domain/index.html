@@ -1,0 +1,212 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://static.HugeDomains.com/css/hdv3-css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap">
+    <title>Shopping Cart | HugeDomains</title>
+    <meta name="description" content="View your shopping cart.">
+    <link rel="canonical" href="https://www.HugeDomains.com/shopping_cart.cfm">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7117339-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-7117339-4');
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-top d-flex ai-center">
+                <a href="https://www.HugeDomains.com/index.cfm" class="logo">
+                    <img src="https://static.HugeDomains.com/images/hdv3-img/hd-header-logo-v3.svg" alt="logo">
+                </a>
+                <div class="search-box">
+                    <form action="https://www.HugeDomains.com/domain_search.cfm" method="get">
+                        <input type="text" name="domain_name" placeholder="Search domains" aria-label="Header Domain Search">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <a href="tel:1-720-593-6478" class="header-tel">+1-720-593-6478</a>
+            </div>
+            <nav>
+                <ul class="navbar-nav">
+                    <li><a href="https://www.HugeDomains.com/index.cfm">Home</a></li>
+                    <li><a href="https://www.HugeDomains.com/faq.cfm">FAQs</a></li>
+                    <li><a href="https://www.HugeDomains.com/about.cfm">About us</a></li>
+                    <li><a href="https://www.HugeDomains.com/contact.cfm">Contact us</a></li>
+                    <li><a href="https://www.HugeDomains.com/payment-plan-login.cfm">My account</a></li>
+                </ul>
+                <div class="cart-icon">
+                    <a href="https://www.HugeDomains.com/shopping_cart.cfm" aria-label="Shopping Cart">
+                        <img src="https://static.HugeDomains.com/images/hdv3-img/cart.png" alt="Shopping Cart">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="cart-container">
+            <h1>Your shopping cart</h1>
+            <div class="cart-table">
+                <div class="cart-table-row">
+                    <span><a href="https://www.HugeDomains.com/domain_profile.cfm?d=VmsBusiness.com">VmsBusiness.com</a></span>
+                    <span>$5,295.00</span>
+                    <a href="https://www.HugeDomains.com/shopping_cart.cfm?delete=VmsBusiness">Remove</a>
+                </div>
+            </div>
+            <div class="cart-total">
+                <div>Subtotal: $5,295.00</div>
+                <div>3% Platform fee: $158.85</div>
+                <div>Total: $5,453.85</div>
+            </div>
+            <div class="cart-footer">
+                <a href="https://www.HugeDomains.com/checkout.cfm" class="btn">Checkout</a>
+            </div>
+        </section>
+    </main>
+    <script src="https://www.paypal.com/sdk/js?client-id=AcLaOADYuk8-HM8iPncmiyFiDoQko4j2wRoM-XrfRhaLocYOeTPlKAK4tz0QPIIoAGaivuiPTaDIPlmV&intent=capture"></script>
+    <script>
+        // PayPal integration code here
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://static.HugeDomains.com/css/styles.css">
+    <script src="https://static.HugeDomains.com/js/hdv3-js/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdRB9UiAAAAABaf3jRLyU_gwaGIp-3OvR51myRx"></script>
+</head>
+<body>
+
+<script>
+    function alertThisNow(d) {
+        alert(d);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        $('#hdv3ShoppingCartOrCheckoutWithID').removeClass('hiddenAtLoad');
+    }, false);
+
+    function hdv3CartCheckoutEFunc() {
+        $('#hdv3CartCheckoutELinkID').addClass('hiddenAtLoad');
+        $('#hdv3CartCheckoutESpinnerID').removeClass('hiddenAtLoad');
+        window.location.href = 'https://www.HugeDomains.com/checkout-escrow.cfm';
+    }
+
+    function hdv3CartCheckoutPPlanFunc() {
+        $('#hdv3CartCheckoutPplanLinkID').addClass('hiddenAtLoad');
+        $('#hdv3CartCheckoutPplanSpinnerID').removeClass('hiddenAtLoad');
+        window.location.href = 'https://www.HugeDomains.com/payment-plan-setup.cfm?d=VmsBusiness.com&action=paymentPlan';
+    }
+</script>
+
+<form action="https://www.HugeDomains.com/checkout-paypal-return-v3.cfm" method="post" id="ppFormID">
+    <input type="hidden" name="jj" id="jjID" value="">
+    <input type="hidden" name="ppnn" id="ppnnID">
+    <input type="hidden" name="ppdd" id="ppddID">
+    <input type="hidden" name="pptoken" id="pptokenID">
+    <input type="hidden" name="asdfg" id="asdfgID">
+</form>
+
+<a href="https://www.HugeDomains.com/checkout-escrow.cfm" class="pp-btn btn darkBlueButton checkoutBtnLeftOffset" id="hdv3CartCheckoutELinkID" onclick="hdv3CartCheckoutEFunc(); return false;" aria-label="Pay with Escrow.com">
+    <img src="https://static.HugeDomains.com/images/hdv3-img/escrow-logo.png" alt="Pay with Escrow.com">
+</a>
+
+<button type="button" id="hdv3CartCheckoutESpinnerID" class="paymentpay-accaunt-content-btn place-order-btn btn hiddenAtLoad checkoutBtnLeftOffset darkBlueButton" onclick="return false;" style="height:40px; width: 200px; margin-top:0px; margin-bottom:10px; background-color:#7199e2;">
+    Processing
+    <div class="circularJ">
+        <div class="circularJ_1"></div>
+        <div class="circularJ_2"></div>
+        <div class="circularJ_3"></div>
+        <div class="circularJ_4"></div>
+        <div class="circularJ_5"></div>
+        <div class="circularJ_6"></div>
+        <div class="circularJ_7"></div>
+        <div class="circularJ_8"></div>
+    </div>
+</button>
+
+<a href="https://www.HugeDomains.com/payment-plan-setup.cfm?d=VmsBusiness.com&action=paymentPlan" class="btn darkBlueButton checkoutBtnLeftOffset" id="hdv3CartCheckoutPplanLinkID" onclick="hdv3CartCheckoutPPlanFunc(); return false;">&#9656; Payment Plan</a>
+
+<button type="button" id="hdv3CartCheckoutPplanSpinnerID" class="paymentpay-accaunt-content-btn place-order-btn btn hiddenAtLoad checkoutBtnLeftOffset darkBlueButton" onclick="return false;" style="height:40px; width: 200px; margin-top:0px; margin-bottom:10px; background-color:#7199e2;">
+    Processing
+    <div class="circularJ">
+        <div class="circularJ_1"></div>
+        <div class="circularJ_2"></div>
+        <div class="circularJ_3"></div>
+        <div class="circularJ_4"></div>
+        <div class="circularJ_5"></div>
+        <div class="circularJ_6"></div>
+        <div class="circularJ_7"></div>
+        <div class="circularJ_8"></div>
+    </div>
+</button>
+
+<section class="bonus-presentation hideAt991Width bbBorder">
+    <div class="bonus-presentation-wrap container">
+        <div class="bonus-presentation-item text-center">
+            <div class="bonus-presentation_icon"><img src="https://static.HugeDomains.com/images/hdv3-img/garantee.png" alt="Guarantee satisfaction ribbon icon"></div>
+            <div class="bonus-presentation_title"><h3>30-day money <br> back guarantee</h3></div>
+        </div>
+        <div class="bonus-presentation-item text-center">
+            <div class="bonus-presentation_icon"><img src="https://static.HugeDomains.com/images/hdv3-img/rocket-icon.png" alt="Rocketship icon"></div>
+            <div class="bonus-presentation_title"><h3>Quick delivery<br>of the domain</h3></div>
+        </div>
+        <div class="bonus-presentation-item text-center">
+            <div class="bonus-presentation_icon"><img src="https://static.HugeDomains.com/images/hdv3-img/present-section-ico-3.png" alt="Thumbs up icon"></div>
+            <div class="bonus-presentation_title"><h3>Safe and secure<br> shopping</h3></div>
+        </div>
+    </div>
+</section>
+
+<section class="condic">
+    <div class="container usdPriceDiv">
+        <p>* All prices are in US Dollars (USD). HugeDomains.com accepts payments from all parts of the globe. If you are making a purchase from outside the United States, you must do your own currency conversions.</p>
+        <p>** There are no shipping charges associated with HugeDomains, however as a part of buying any domain name you will have to pay the yearly registration fees. These fees depend on the registrar you decide to keep your domain with, but typically run anywhere from $9.77 to $25.00 per year. IF YOU FAIL to pay these yearly registration/renewal costs to your domain registrar, your domain will expire and you will no longer have ownership rights to the domain name.</p>
+    </div>
+</section>
+
+<div class="fab-btn-wrap">
+    <a href="https://www.HugeDomains.com/contact.cfm" class="fab-btn modal-trigger" data-modal="contact-form-modal" id="fabButtonIconLinkID" aria-label="Contact HugeDomains with our FAB Icon">
+        <img src="https://static.HugeDomains.com/images/hdv3-img/mail-icon.png" alt="">
+    </a>
+</div>
+
+<div class="contact-modal modal" data-modal="contact-form-modal" id="hdv3FabPopupDivOuterID">
+    <div class="modal-header">
+        <span class="head" id="fabButtonPopopHeadID"></span>
+        <span class="close-modal js-modal-close" tabindex="-1" id="hdv3FabPopupDivCloseID"></span>
+    </div>
+    <div class="modal-content hass-errore" id="fabButtonPopopOuterDivID"></div>
+</div>
+
+<footer id="footer">
+    <div class="container">
+        <div class="d-flex footer-links jc-between threeColFooterNav">
+            <div class="col">
+                <h4 class="font24 colorWhite">Shop</h4>
+                <ul class="footer-menu">
+                    <li><a href="https://www.HugeDomains.com/index.cfm" class="link whiteLink">Home</a></li>
+                    <li><a href="https://www.HugeDomains.com/categories.cfm" class="link whiteLink">Categories</a></li>
+                    <li><a href="https://www.HugeDomains.com/payment-plans.cfm" class="link whiteLink">Payment plans</a></li>
+                    <li><a href="https://www.HugeDomains.com/payment-plan-login.cfm" class="link whiteLink">My account</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4 class="font24 colorWhite">Safe and secure</h4>
+                <ul class="footer-menu">
+                    <li><a href="https://www.HugeDomains.com/satisfaction_guaranteed.cfm" class="link whiteLink">Money back guarantee</a></li>
+                    <li><a href="https://www.HugeDomains.com/escrow.cfm" class="link whiteLink">Escrow.com</a></li>
+                    <li><a href="https://www.HugeDomains.com/namebright.cfm" class="link whiteLink">NameBright.com</a></li>
+                    <li
